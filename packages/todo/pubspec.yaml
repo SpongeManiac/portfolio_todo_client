@@ -1,0 +1,11 @@
+name: todo
+description: A new dart package project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+
+dev_dependencies:
