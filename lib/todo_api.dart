@@ -46,7 +46,7 @@ class TodoAPI {
         return false;
       }
     } catch (e) {
-      print(e);
+      //print(e);
       return false;
     }
   }
@@ -65,7 +65,7 @@ class TodoAPI {
   Future<bool> updateTodo(Todo todo) async {
     try {
       var uri = Uri.parse('$todosUri${todo.id}');
-      print('Sending json: ${todo.toJson()}');
+      //print('Sending json: ${todo.toJson()}');
       var response = await http.put(uri, body: todo.toJson());
       if (response.statusCode == 200) {
         return true;
@@ -87,7 +87,7 @@ class TodoAPI {
         return false;
       }
     } catch (e) {
-      print(e);
+      //print(e);
       return false;
     }
   }
